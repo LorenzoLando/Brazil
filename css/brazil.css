@@ -6,6 +6,14 @@ GENERAL
 	margin: 0;
 	padding: 0;
 }
+
+a {
+	color: inherit;
+}
+a:hover {
+	color: inherit;
+	
+}
 /******************************************************
 HEADER
 ******************************************************/
@@ -14,6 +22,7 @@ HEADER
 header {
 	height: 100vh;
 	width: 100vw;
+	margin: 0;
 	background-image: url(../img/venice.jpg) ;
 	background-repeat:no-repeat;
     background-size:cover;
@@ -28,6 +37,18 @@ header {
 	border-bottom:1px solid white; 
 }
 
+#nav {
+/*	background-color: red;*/
+	display: block;
+	padding: 5vh 0;
+}
+
+#nav li {
+	display: inline;
+	color: white;
+	padding: 0 15px;
+	
+}
 
 
 /******************************************************
