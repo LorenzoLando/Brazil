@@ -12,7 +12,7 @@ a {
 }
 a:hover {
 	color: inherit;
-	
+
 }
 /******************************************************
 HEADER
@@ -26,7 +26,7 @@ header {
 	background-image: url(../img/venice.jpg) ;
 	background-repeat:no-repeat;
     background-size:cover;
-	
+
 }
 
 #title {
@@ -34,11 +34,11 @@ header {
 	margin-top: 30vh;
 	color: white;
 	border-top: 1px solid white;
-	border-bottom:1px solid white; 
+	border-bottom:1px solid white;
 }
 
 #nav {
-/*	background-color: red;*/
+
 	display: block;
 	padding: 5vh 0;
 }
@@ -47,8 +47,41 @@ header {
 	display: inline;
 	color: white;
 	padding: 0 15px;
-	
+
 }
+/******************************************************
+ABOUT
+******************************************************/
+
+#about {
+	height: 75vh;
+	width: 100vw;
+	background-color: #eff0f2;
+}
+
+/******************************************************
+FOOD-GALLEY
+******************************************************/
+#food-gallery {
+	height: 95vh;
+	width: 100vw;
+	background-image: url(../img/venice.jpg) ;
+	background-repeat:no-repeat;
+    background-size:cover;
+
+}
+
+/******************************************************
+MENUS
+******************************************************/
+
+
+/******************************************************
+RESERVATIONS
+******************************************************/
+/******************************************************
+REVIEWS
+******************************************************/
 
 
 /******************************************************
