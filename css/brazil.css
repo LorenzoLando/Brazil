@@ -1,89 +1,118 @@
-/******************************************************
+/*************************************************************
 GENERAL
-******************************************************/
-*{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-a {
-	color: inherit;
-}
+***************************************************************/
+a,
 a:hover {
 	color: inherit;
-
+	text-decoration: none;
 }
-/******************************************************
-HEADER
-******************************************************/
 
+/*************************************************************
+JUMBOTRON
+***************************************************************/
 
-header {
+.jumbotron {
+
 	height: 100vh;
-	width: 100vw;
-	margin: 0;
-	background-image: url(../img/venice.jpg) ;
-	background-repeat:no-repeat;
-    background-size:cover;
+	/*linear gradient to the img*/
+	background:   linear-gradient(
+      rgba(14, 91, 255, 0.6), 
+      rgba(14, 91, 255, 0.6)
+    )
+    ,url(../img/brazil.jpg);
+	background-size: cover;
+}
+
+.btn {
+
+	background-color: rgba(14, 91, 255, 0.0) !important;
+	border: 2px solid white;
+}
+
+
+
+.navbar {
+
+	background-color: rgb(12, 101, 244) !important;
+}
+
+.background-top {
+
+	
+	background-color: rgba(14, 91, 255, 0.0)  !important;
 
 }
 
-#title {
-	display: inline-block;
-	margin-top: 30vh;
-	color: white;
-	border-top: 1px solid white;
-	border-bottom:1px solid white;
-}
 
-#nav {
+/*************************************************************
+SECTIONS
+***************************************************************/
 
-	display: block;
-	padding: 5vh 0;
-}
+#sections {
 
-#nav li {
-	display: inline;
-	color: white;
-	padding: 0 15px;
-
-}
-/******************************************************
-ABOUT
-******************************************************/
-
-#about {
-	height: 75vh;
-	width: 100vw;
-	background-color: #eff0f2;
-}
-
-/******************************************************
-FOOD-GALLEY
-******************************************************/
-#food-gallery {
-	height: 95vh;
-	width: 100vw;
-	background-image: url(../img/venice.jpg) ;
-	background-repeat:no-repeat;
-    background-size:cover;
+	text-align: center;
 
 }
 
-/******************************************************
-MENUS
-******************************************************/
+
+#map {
+	height: inherit;
+	width: inherit;
+}
+/*************************************************************
+ANIMATION CLASS make the titles appearing and disappearing
+***************************************************************/
 
 
-/******************************************************
-RESERVATIONS
-******************************************************/
-/******************************************************
-REVIEWS
-******************************************************/
+
+.disappearing {
+
+	animation-name: myAnimationDown;
+	animation-duration: 2000ms;
+	animation-fill-mode: forwards;
+}
+
+.re-appearing {
+
+	animation-name: myAnimationUp;
+	animation-duration: 2000ms;
+	animation-fill-mode: forwards;
+}
 
 
-/******************************************************
-FOOTER
-******************************************************/
+
+@keyframes myAnimationDown{
+0%{
+    opacity: 1;
+    transform: : rotateX(90deg);
+}
+50%{
+    opacity: 0.5;
+    transform: : rotateX(0deg);
+}
+100%{
+    display: none;
+    opacity: 0;
+    transform: rotateX(90deg);
+}
+}
+
+
+@keyframes myAnimationUp{
+0%{
+	display: none;
+    opacity: 0;
+    transform: rotateX(90deg);
+   
+}
+50%{
+ 	opacity: 0.5;
+    transform: : rotateX(0deg);
+}
+100%{
+    opacity: 1;
+    transform: : rotateX(90deg);
+}
+}
+
+
